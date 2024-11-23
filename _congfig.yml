@@ -1,0 +1,12 @@
+title: CS Notes
+description: A collection of notes on computer science topics.
+theme: jekyll-theme-cayman
+
+# Define the pages that will appear in the navigation bar
+header_pages:
+  - index.md
+  - data_structures.md
+  - algorithms.md
+  - computer_architecture.md
+
+# Optional: additional configuration for navigation order
