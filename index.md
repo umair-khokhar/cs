@@ -1,6 +1,7 @@
 # Computer Science
 
 ## Navigation
+- [Home](index.md)
 - [Computer Architecture](computer-architecture.md)
 - [Data Structures](data-structures.md)
 - [Algorithms](algorithms.md)
