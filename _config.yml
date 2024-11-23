@@ -1,12 +1,17 @@
 title: CS Notes
 description: A collection of notes on computer science topics.
-theme: jekyll-remote-theme
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+plugins:
+  - jekyll-remote-theme
 
 # Define the pages that will appear in the navigation bar
 header_pages:
   - index.md
-  - data_structures.md
+  - computer-architecture.md
+  - data-structures.md
   - algorithms.md
-  - computer_architecture.md
+  - string-concepts.md
+  - complexity-analysis.md
+  - glossary.md
 
 # Optional: additional configuration for navigation order
