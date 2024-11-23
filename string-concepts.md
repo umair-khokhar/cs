@@ -1,5 +1,5 @@
-## String Concepts
-### Sequence
+# String Concepts
+## Sequence
 A sequence is an ordered list of elements, where the elements follow one another in a specific order.
 
 **Example**:
@@ -7,7 +7,7 @@ A sequence is an ordered list of elements, where the elements follow one another
 - Valid subsequence: `1, 2, 3, 4`
 - Invalid subsequence: Any sequence where elements are missing.
 
-### Subsequence
+## Subsequence
 - A subsequence is derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
 - The remaining elements must preserve their relative order, but they do not have to be contiguous.
 - A sequence is also considered its subsequence.

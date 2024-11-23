@@ -1,6 +1,6 @@
 # Computer Science
 
-## Navigation
+## Table of content
 - [Home](index.md)
 - [Computer Architecture](computer-architecture.md)
 - [Data Structures](data-structures.md)

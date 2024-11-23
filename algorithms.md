@@ -66,7 +66,7 @@ print(prefix_sum)  # Output: [1, 3, 6, 10, 15]
 ```
 
 ## Dynamic Programming with Binary Search
-### `while (left <= right)` vs `while (left < right)`
+### while (left <= right) vs while (left < right)
 - **`while (left <= right)`**: Typically used in binary search to ensure all elements are considered.
 - **`while (left < right)`**: Used for specific boundary or condition search within an array.
 
