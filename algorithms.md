@@ -163,13 +163,38 @@ The subsets can be computed using backtracking and the time complexity is O((2 ^
 ## Divide and Conquer
 A divide-and-conquer algorithm works by recursively breaking the problem down into two or more subproblems of the same or related type, until these subproblems become simple enough to be solved directly [1]. Then one combines the results of subproblems to form the final solution.
 
+
+### Template
 There are in general three steps that one can follow in order to solve the problem in a divide-and-conquer manner.
 
 ***1. Divide.*** Divide the problem `S` into a set of subproblems: `{S1, S2, ... Sn}` where `n ≥ 2` i.e. there are usually more than one subproblem.
+
 ***2. Conquer.*** Solve each subproblem recursively. 
+
 ***3. Combine.*** Combine the results of each subproblem.
 
 ![Divide and Conquer](images/divide-conquer.png "Divide and Conquer")
+
+
+We can summarize the above steps in the following pseudocode template.
+
+```
+def divide_and_conquer( S ):
+    # (1). Divide the problem into a set of subproblems.
+    [S1, S2, ... Sn] = divide(S)
+
+    # (2). Solve the subproblem recursively,
+    #   obtain the results of subproblems as [R1, R2... Rn].
+    rets = [divide_and_conquer(Si) for Si in [S1, S2, ... Sn]]
+    [R1, R2,... Rn] = rets
+
+    # (3). combine the results from the subproblems.
+    #   and return the combined result.
+    return combine([R1, R2,... Rn])
+```
+
+As one can see from the above template, the essential part of the divide and conquer is to figure out the recurrence relationship between the subproblems and the original problem, which subsequently defines the functions of divide() and combine(). 
+
 
 ## Decrease and Conquer
 As you can see, divide-and-conquer algorithm is naturally implemented in the form of recursion. Another subtle difference that tells a divide-and-conquer algorithm apart from other recursive algorithms is that we break the problem down into two or more subproblems in the divide-and-conquer algorithm, rather than a single smaller subproblem. The latter recursive algorithm sometimes is called decrease and conquer instead, such as Binary Search.
