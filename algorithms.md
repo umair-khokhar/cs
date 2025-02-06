@@ -196,6 +196,17 @@ def divide_and_conquer( S ):
 As one can see from the above template, the essential part of the divide and conquer is to figure out the recurrence relationship between the subproblems and the original problem, which subsequently defines the functions of divide() and combine(). 
 
 
+### Maximum Subarray
+In maximum subarray problem the crossSum step is part of combine(merge) as it enforces to  `l < i < r` check.
+
+
 ## Decrease and Conquer
 As you can see, divide-and-conquer algorithm is naturally implemented in the form of recursion. Another subtle difference that tells a divide-and-conquer algorithm apart from other recursive algorithms is that we break the problem down into two or more subproblems in the divide-and-conquer algorithm, rather than a single smaller subproblem. The latter recursive algorithm sometimes is called decrease and conquer instead, such as Binary Search.
 
+## Midpoint (Math.floor((left + right) / 2))
+The most suitable way to reach mid point. 
+### Midpoint close to left
+Keep in mind that mid point will always be close to left because of the Math.floor. 
+
+### Midpoint equal to right
+The only case when midpoint will be equal to right is when left === right.
