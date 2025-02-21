@@ -1,4 +1,10 @@
 # Data Structures
+## Sets
+Unique elements data structured
+
+## Time complexity
+access, add, has, and delete: O(1)
+
 ## Binary Tree
 A binary tree is a tree data structure where each node has 0 to 2 children.
 
