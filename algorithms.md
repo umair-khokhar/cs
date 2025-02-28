@@ -210,3 +210,27 @@ Keep in mind that mid point will always be close to left because of the Math.flo
 
 ### Midpoint equal to right
 The only case when midpoint will be equal to right is when left === right.
+
+
+## Tree and graph algorithms
+### DFS 
+DFS explores a path before backtracing. It works well when solution is deeper or when the branching factor is high.
+
+#### Time complexity
+O(V + E) or O(N)
+
+#### Space complexity
+DFS explores a path fully before backtracking. Each explored node is stored on the recursive stack. At any given moment, only one stack frame is active, and if each stack frame requires  O(N)  space, then the overall space complexity remains  O(N) , as only the deepest active frame contributes to memory usage at a time.
+
+### BFS 
+DFS explores all nodes at a level before moving on to next. It works well for finding paths in a undirected graph.
+
+#### Time complexity
+O(V + E) or O(N)
+
+#### Space complexity
+DFS explores a path fully before backtracking. Each explored node is stored on the recursive stack. At any given moment, only one stack frame is active, and if each stack frame requires  O(N)  space, then the overall space complexity remains  O(N) , as only the deepest active frame contributes to memory usage at a time.
+
+
+### DFS vs BFS 
+Since BFS stores all the nodes in the memory for deeper solutions it might not be ideal as it will end up using more memory.
