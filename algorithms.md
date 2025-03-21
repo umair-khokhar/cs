@@ -234,3 +234,8 @@ DFS explores a path fully before backtracking. Each explored node is stored on t
 
 ### DFS vs BFS 
 Since BFS stores all the nodes in the memory for deeper solutions it might not be ideal as it will end up using more memory.
+
+## Recursion
+### Tail recursion
+Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
+
