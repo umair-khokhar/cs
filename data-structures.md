@@ -80,3 +80,6 @@ class DisjointSet {
 
 ### Space complexity
 `O(n)` - Because of the rank and the parent arrays.
+
+## Binary matrix
+A binary matrix is simply a 2D grid (matrix) where each element is either 0 or 1.
