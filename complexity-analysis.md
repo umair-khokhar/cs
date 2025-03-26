@@ -14,7 +14,29 @@ This includes both the auxiliary space and the space used by the output.
 
 
 ## Methods to evaluate time complexity
-### Master theorem
+### Recursion
+The execution tree of a recursive function would form an n-ary tree, with n as the number of times recursion appears in the recurrence relation. For instance, the execution of the Fibonacci function would form a binary tree, as one can see from the following graph which shows the execution tree for the calculation of Fibonacci number f(4). The time complexity is O(2 ^ N)
+
+Simlarly if it has 3 recursions in the recurrence relationship, it is O(3 ^ N). Here is a code for such a problem
+
+```
+def three_recursive(n):
+    # Base case: when n is 0, do constant work.
+    if n == 0:
+        return 1  # Constant time work.
+    
+    # Three recursive calls on a problem reduced by 1.
+    return three_recursive(n - 1) + three_recursive(n - 1) + three_recursive(n - 1) + 1
+
+# Test the function for different values of n.
+for i in range(6):
+    print(f"three_recursive({i}) = {three_recursive(i)}")
+```
+
+At each step the problem is reduced by 1, such that `T(n) = 3 T (n - 1) + O(1)`. `O(1)` is the time complexity of sum operation after recursion. This would translate to time complexity `O(3 ^ n)` since the height of the trenary tree is `n`.
+ 
+### Divide and Conquery algorithms
+#### Master theorem
 Master theorem states the following
 
 ``` 
