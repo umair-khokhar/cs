@@ -16,6 +16,7 @@ A binary tree is a tree data structure where each node has 0 to 2 children.
 - Every node has either 0 or 2 children.
 - No node in a full binary tree has exactly one child.
 - All non-leaf nodes have exactly two children.
+- In a full binary tree with n levels, the total number of nodes would be (2^n) - 1.
 
 ### Balanced Binary Tree
 - A binary tree where the height difference between the left and right subtrees of any node is at most one.
