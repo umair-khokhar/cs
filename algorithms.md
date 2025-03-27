@@ -196,6 +196,8 @@ def divide_and_conquer( S ):
 As one can see from the above template, the essential part of the divide and conquer is to figure out the recurrence relationship between the subproblems and the original problem, which subsequently defines the functions of divide() and combine(). 
 
 
+Review [mergesort](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/2868/) and [quicksort] (https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/2870/)
+
 ### Maximum Subarray
 In maximum subarray problem the crossSum step is part of combine(merge) as it enforces to  `l < i < r` check.
 
