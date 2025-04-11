@@ -2,11 +2,92 @@
 ## Catalan Numbers
 - The Catalan numbers form a sequence that starts like this: 1, 1, 2, 5, 14, 42, 132, ...
 
-### Formula for Catalan Numbers
+
+### Catalan Numbers Implementation
+#### To find the total number of valid combinations (Dynamic Programming)
+Use dynamic programming in the following template manner
+
+```
+const totalValidParanthesis = (n) => {
+    const df = new Array(n + 1).fill(0);
+    df[0] = 1;
+    df[1] = 1;
+
+    for(let i = 2; i <=n; i++) {
+        for(let j = 1; j <= i; j++) {
+            df[i] += df[j - 1] * df[i - j];
+        }
+    }
+    return df[n];
+}
+
+console.log(totalValidParanthesis(3)); 
+console.log(totalValidParanthesis(10));
+
+```
+
+The time complexity therefore is `O(N^2)`
+
+
+
+
+### To find all valid combinations (Recursive solution)
+To find all valid combinations, a recursive catalan number algorithm should be used which has the following recurrence
+
+```
+        n
+  Cn  = ∑ Ci-1 × Cn-i
+        i=1
+```
+
+or
+
 ```
         n-1
   Cn  = ∑ Ci × Cn-1-i
         i=0
+```
+
+
+
+
+It follows the following template:
+
+```
+function generateParenthesis(n) {
+    const dp = new Map();
+
+    const generate = (num) => {
+        if (dp.has(num)) return dp.get(num);
+        if (num === 0) return [""];
+
+        const result = [];
+
+        for (let i = 1; i <= num; i++) {
+            const left = generate(i - 1);           // C_{i-1}
+            const right = generate(num - i); // C_{n-i}
+
+            for (const l of left) {
+                for (const r of right) {
+                    result.push(`(${l})${r}`);
+                }
+            }
+        }
+
+        dp.set(num, result);
+        return result;
+    };
+
+    return generate(n);
+}
+```
+The time complexity is `O(4 ^ n / n ^ 12)`.
+
+### Formula for Catalan Numbers
+```
+        n
+  Cn  = ∑ Ci-1 × Cn-i
+        i=1
 ```
 
 ### Example 1: Arranging Parentheses (Brackets)
