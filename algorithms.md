@@ -322,3 +322,23 @@ Since BFS stores all the nodes in the memory for deeper solutions it might not b
 ### Tail recursion
 Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
 
+## Bit manipulation
+
+
+### Bit-wise operations
+#### Masking
+Masking is the `&`, `|`, `^`, or `~` operations between the value and the mask. 
+
+For example for bitwise operation Javascript do 5 bit masking on numbers before the bit operations to convert the numbers to 32 bit integers.
+
+#### Left shift
+`>> (signed)` or `>>> (unsigned)` is the process of divifing the value by 2 or adding `0` to the left of the binary value.
+
+
+`>>> (unsigned)` discards sign and then perform left shift.
+
+#### right shift
+`<<` adds zero to the end of the binary value or multiply by `2`. 
+
+#### How to get the LSB using the `&` masking
+`n & 1` would pull LSB because it `&` the value with binary `1`.
