@@ -2,6 +2,8 @@
 ## Catalan Numbers
 - The Catalan numbers form a sequence that starts like this: 1, 1, 2, 5, 14, 42, 132, ...
 
+Catalan number are part of counting theory which is a part of combinatorics.
+
 
 ### Catalan Numbers Implementation
 #### To find the total number of valid combinations (Dynamic Programming)
