@@ -344,3 +344,11 @@ For example for bitwise operation Javascript do 5 bit masking on numbers before 
 
 #### How to get the LSB using the `&` masking
 `n & 1` would pull LSB because it `&` the value with binary `1`.
+
+
+### Converting a number to binary equivalent
+```
+const n = 5;
+
+console.log((n >>> 5).toString(2))
+```
