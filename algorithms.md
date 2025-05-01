@@ -4,6 +4,9 @@
 
 Catalan number are part of counting theory which is a part of combinatorics.
 
+## How to identify if a problem is a catalan number
+If a problem involves counting the number of valid ways to build a structure where each choice recursively splits the rest into independent subproblems, it’s a strong candidate for Catalan numbers.
+
 
 ### Catalan Numbers Implementation
 #### To find the total number of valid combinations (Dynamic Programming)
