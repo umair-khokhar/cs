@@ -5,6 +5,12 @@ At each level, the input is halved, but the work performed remains **O(n)** (e.g
 ## O(N ^ (h + 1))
 To get time complexity of an algorithm that unfolds as a n-ary tree. Like recursion, backtracking etc.
 
+## O(N + M)
+Your algorithm explicitly processes both N and M
+
+## O(max(N, M))
+Your algorithm is limited by just one input size
+
 # Space complexity analysis 
 ## Auxiliary space complexity
 This refers to the extra space used by the algorithm excluding the input and output. It includes space used by recursion stacks, temporary variables, or additional data structures used within the function. ***Use this for academics and interviews***.
