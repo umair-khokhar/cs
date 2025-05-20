@@ -355,3 +355,21 @@ const n = 5;
 
 console.log((n >>> 5).toString(2))
 ```
+
+### Adding two binary numbers
+First `XOR` the numbers than add there `&` and `<< 1` to it. This will give the answer. See example below
+
+```
+let a = 0b111101;
+let b = 0b11110111111;
+console.log(a, b)
+
+while(b !== 0) {
+  let xor = a ^ b;
+  let carry = (a & b) << 1;
+
+  a = xor;
+  b = carry;
+}
+console.log(a.toString(2));
+```
