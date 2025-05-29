@@ -113,6 +113,19 @@ The time complexity is `O(4 ^ n / n ^ 12)`.
 - **Planning**: Deciding the order of cities to visit for minimal gas usage.
 - **Permutations**: Generating permutations is also a backtracking problem.
 
+### Template
+```
+backtrack (candidate, ...)
+  if(candidate satisfy constraints)
+    add to results
+
+  add something to candidate
+  backtrack(canddiate)
+  remove the something from candidate
+```
+
+
+
 ## Divide and Conquer
 - TODO: Add documentation and complete study materials from [LeetCode](https://leetcode.com/explore/featured/card/recursion-ii/470/divide-and-conquer/2874/).
 
