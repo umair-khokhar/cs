@@ -84,3 +84,11 @@ class DisjointSet {
 
 ## Binary matrix
 A binary matrix is simply a 2D grid (matrix) where each element is either 0 or 1.
+
+
+## Graphs
+Graphs can directed or undirected and could have cycles while trees cannot have cycles and they flow from top to bottom.
+
+### Euler path
+An Euler path in a graph is a trail that visits every edge exactly once (you can reuse vertices, but each edge only once).
+
