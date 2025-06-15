@@ -1,4 +1,16 @@
 # Algorithms
+## Problem classes
+## NP
+NP problems soltion can be verified in polynomial time (time complexity)
+
+> You can loosely say that many NP problems are not known to have a polynomial time solution.
+
+## NP-hard
+NP-hard problem could be reduced to NP problems
+
+##  NP-complete
+If a problem is both NP and NP-hard it is NP-complete.
+
 ## Catalan Numbers
 - The Catalan numbers form a sequence that starts like this: 1, 1, 2, 5, 14, 42, 132, ...
 
