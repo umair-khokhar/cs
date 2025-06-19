@@ -5,8 +5,24 @@ NP problems soltion can be verified in polynomial time (time complexity)
 
 > You can loosely say that many NP problems are not known to have a polynomial time solution.
 
+### How to see if a problem is NP in practise
+You can verify a given solution efficiently (in polynomial time), even if finding that solution might be hard.
+
+
+
 ## NP-hard
-NP-hard problem could be reduced to NP problems
+A NP problem could be reduced to a NP-hard problem.
+
+### how to see if a problem is NP-hard in practise
+To show a problem is NP-hard, you usually:
+
+- Take a known NP-hard problem (like Set Cover, 3-SAT, or Hamiltonian Cycle).
+
+- Show a polynomial-time reduction from that NP-hard problem to your problem.
+
+If you can transform any instance of the known NP-hard problem into an instance of your problem such that solving your problem also solves the NP-hard problem, then your problem is at least as hard as that NP-hard problem.
+
+
 
 ##  NP-complete
 If a problem is both NP and NP-hard it is NP-complete.

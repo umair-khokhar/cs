@@ -92,3 +92,19 @@ Graphs can directed or undirected and could have cycles while trees cannot have 
 ### Euler path
 An Euler path in a graph is a trail that visits every edge exactly once (you can reuse vertices, but each edge only once).
 
+## Monotonic stack
+A monotonic stack is a stack where the items are order ascending or descending.
+
+
+## Linked List
+Its a list of nodes, where every node has a value and a pointer(s) to the next and/or the previous node in the datastructure.
+
+
+### Singly linked list
+It only stores the pointer to the next node.
+
+
+### Doubly linkedlist
+It stores the pointers to previous and the next node.
+
+The next pointer section of the last node is not and the previous pointer section of the first node is null.
